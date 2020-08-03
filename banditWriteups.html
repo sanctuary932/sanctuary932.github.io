@@ -15,9 +15,22 @@
     <h1>Bandit: Level 0 --> Level 1</h1>
     <A HREF=https://overthewire.org/wargames/bandit/bandit1.html>Bandit 0 --> 1</A>
     <p>This level is extremely simple, but it's a good foundation if you've never used the Linux command line before.</p>
- 
-    <div class="tooltip">Hint
-	    <span class="tooltiptext">Read the man pages for the command 'cat'. To read man pages, use the command 'man [command here].</span>
-    </div> 
+
+    <button onclick="button()">Hint</button>
+    <div id="div1">
+      Try reading the man pages for some of the listed commands on the OverTheWire level page. They may be useful!
+    </div>
+
+
+    <script>
+      function button() {
+        var x = document.getElementById("div1");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>  
   </body>
 </html>
