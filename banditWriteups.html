@@ -16,21 +16,33 @@
     <A HREF=https://overthewire.org/wargames/bandit/bandit1.html>Bandit 0 --> 1</A>
     <p>This level is extremely simple, but it's a good foundation if you've never used the Linux command line before.</p>
 
-    <button onclick="button()">Hint</button>
-    <div id="div1">
+    <button onclick="hint0()">Hint</button>
+    <div id="hint0">
       Try reading the man pages for some of the listed commands on the OverTheWire level page. They may be useful!
     </div>
-
-
     <script>
-      function button() {
-        var x = document.getElementById("div1");
+      function hint0() {
+        var x = document.getElementById("hint0");
         if (x.style.display === "none") {
           x.style.display = "block";
         } else {
           x.style.display = "none";
         }
       }
-    </script>  
+    </script>
+
+    <button onclick="solution0()">Solution</button>
+    <div id="solution0">
+       You need to use cat to print the contents of the file "readme". The file contains the password that you can copy and paste to log in to bandit1.
+    </div>
+    <script>
+      function solution0() {
+	var x = document.getElementById("solution0");
+	if (x.style.display === "none") {
+	  x.style.display = "block";
+	} else {
+	  x.style.display = "none";
+	}
+      }
   </body>
 </html>
